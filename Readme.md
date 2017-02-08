@@ -11,8 +11,16 @@ Usage
 =====
 
 ```Ruby
-CODE EXAMPLE
+require 'ar_multi_threaded_transactional_tests'
+
+it "stays in sync" do
+  ArMultiThreadedTransactionalTests.activate do
+    Array.new(10).map { Thread.new { 10.times { User.create! } } }.each(&:join)
+  end
+end
 ```
+
+Alternatively use `.activate` and `.deactivate`
 
 Author
 ======

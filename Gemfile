@@ -3,5 +3,6 @@ gemspec
 
 gem "bump"
 gem "rake"
-gem "rspec"
+gem "maxitest"
 gem "single_cov"
+gem "sqlite3"
