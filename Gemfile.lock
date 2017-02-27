@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ar_multi_threaded_transactional_tests (0.2.0)
+    ar_multi_threaded_transactional_tests (0.2.1)
       activerecord (>= 4.2.0, < 5.2.0)
 
 GEM
@@ -44,3 +44,6 @@ DEPENDENCIES
   single_cov
   sqlite3
   wwtd
+
+BUNDLED WITH
+   1.13.6
