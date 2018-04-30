@@ -9,8 +9,8 @@ Gem::Specification.new name, ArMultiThreadedTransactionalTests::VERSION do |s|
   s.homepage = "https://github.com/grosser/#{name}"
   s.files = `git ls-files lib/ bin/ MIT-LICENSE`.split("\n")
   s.license = "MIT"
-  s.required_ruby_version = '>= 2.1.0'
-  s.add_runtime_dependency 'activerecord', '>= 4.2.0', '< 5.2.0'
+  s.required_ruby_version = '>= 2.2.0'
+  s.add_runtime_dependency 'activerecord', '>= 4.2.0', '< 5.3.0'
   s.add_development_dependency "bump"
   s.add_development_dependency "rake"
   s.add_development_dependency "maxitest"
