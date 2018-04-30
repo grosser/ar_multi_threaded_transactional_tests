@@ -1,6 +1,7 @@
 language: ruby
 cache: bundler
 before_install: gem install bundler
+bundler_args: "" # make bumping versions not break all tests
 branches:
   only: master
 rvm:
