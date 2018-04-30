@@ -1,7 +1,9 @@
 # connect
 ActiveRecord::Base.establish_connection(
   adapter: "sqlite3",
-  database: ":memory:"
+  database: "file:memdb1?mode=memory&cache=shared",
+  pool: 1, # make it blow up fast
+  checkout_timeout: 1
 )
 
 # create tables
