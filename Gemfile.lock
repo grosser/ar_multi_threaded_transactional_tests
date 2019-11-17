@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ar_multi_threaded_transactional_tests (0.3.0)
+    ar_multi_threaded_transactional_tests (0.4.0)
       activerecord (>= 4.2.0, < 6.1.0)
 
 GEM
