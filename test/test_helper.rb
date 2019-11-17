@@ -9,4 +9,5 @@ require "ar_multi_threaded_transactional_tests/version"
 require "ar_multi_threaded_transactional_tests"
 
 require_relative 'database'
+require 'maxitest/global_must'
 require 'maxitest/autorun'
