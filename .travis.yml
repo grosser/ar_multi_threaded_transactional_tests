@@ -5,12 +5,19 @@ bundler_args: "" # make bumping versions not break all tests
 branches:
   only: master
 rvm:
-  - 2.2.10
-  - 2.3.7
-  - 2.4.4
-  - 2.5.1
+- 2.3
+- 2.4
+- 2.5
+- 2.6
 gemfile:
-  - gemfiles/rails42.gemfile
-  - gemfiles/rails50.gemfile
-  - gemfiles/rails51.gemfile
-  - gemfiles/rails52.gemfile
+- gemfiles/rails42.gemfile
+- gemfiles/rails50.gemfile
+- gemfiles/rails51.gemfile
+- gemfiles/rails52.gemfile
+- gemfiles/rails60.gemfile
+matrix:
+  exclude:
+    - rvm: 2.3
+      gemfile: gemfiles/rails60.gemfile
+    - rvm: 2.4
+      gemfile: gemfiles/rails60.gemfile
