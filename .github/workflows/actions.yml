@@ -9,13 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: ['2.5', '2.6', '2.7']
-        rails: ['42', '50', '51', '52', '60', '61']
-        exclude:
-        - ruby: '2.6'
-          rails: '42'
-        - ruby: '2.7'
-          rails: '42'
+        ruby: ['3.1', '3.2', '3.3']
+        rails: ['61', '70', '71']
     name: ruby${{ matrix.ruby }} rails${{ matrix.rails }} rake
     # TODO: use setup-ruby with bundler-cache: true ... but that fails on always using deployment mode
     steps:
