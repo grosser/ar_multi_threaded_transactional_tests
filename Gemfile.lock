@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     ar_multi_threaded_transactional_tests (0.5.0)
-      activerecord (>= 4.2.0, < 6.2.0)
+      activerecord (>= 6.1.0, < 7.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -24,8 +24,8 @@ GEM
       concurrent-ruby (~> 1.0)
     maxitest (3.6.0)
       minitest (>= 5.0.0, < 5.14.0)
-    minitest (5.13.0)
-    rake (12.3.1)
+    minitest (5.12.0)
+    rake (13.2.1)
     single_cov (1.0.2)
     sqlite3 (1.4.2)
     tzinfo (2.0.4)
@@ -44,4 +44,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   2.2.3
+   2.5.22
