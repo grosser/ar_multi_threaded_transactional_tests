@@ -51,7 +51,7 @@ module ArMultiThreadedTransactionalTests
   end
 
   module ExecutionSyncer
-    def log(*)
+    def log(...)
       ArMultiThreadedTransactionalTests.synchronize { super }
     end
   end
